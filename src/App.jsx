@@ -1,15 +1,27 @@
-
 import { useState } from "react";
-import Header from "./components/Header";
-import Main from "./components/Main";
+
+const ToDoList = ["lavare i piatti","fare la spesa","portare fuori il cane"];
 
 function App() {
-  const form = useState(null);
+
+  const [ToDo, setTODO] = useState(ToDoList);
+  const [newDo, setNewDo] = useState('');
 
   return (
-    <div>
+    <>
+      <form onSubmit={ToDo}>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Cose da fare oggi!!"
+            value={newDo}
+            onChange={(e) => setNewDo(e.target.value)}
+          />
+
+          <button className="">Aggiungi</button>
+        </form>
       
-    </div>
+    </>
   );
 }
 
