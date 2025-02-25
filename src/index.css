@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenitore principale */
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 750px;
+  text-align: center;
+}
+
+/* Lista */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Singolo elemento della lista */
+.todo-item {
+  background: #e3e3e3;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Testo del task */
+.task-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Pulsante di eliminazione */
+.delete-btn {
+  border: none;
+  background: #dc3545;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Input */
+.todo-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Bottone aggiunta */
+.add-btn {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
